@@ -3,6 +3,11 @@ const app = express();
 
 const PORT = 3055;
 
+app.use((req, res, next) => {
+    console.log(`${req.method} ${req.url}`);
+    next();
+})
+
 app.get('/', (req, res) => {
     let date = new Date().toLocaleDateString();
     let time = new Date().toLocaleTimeString();
