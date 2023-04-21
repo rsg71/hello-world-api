@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const PORT = 3055;
+const PORT = 8080;
 
 app.use((req, res, next) => {
     console.log(`${req.method} ${req.url}`);
