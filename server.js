@@ -11,7 +11,7 @@ app.use((req, res, next) => {
 app.get('/', (req, res) => {
     let date = new Date().toLocaleDateString();
     let time = new Date().toLocaleTimeString();
-    res.send(`You are connected on ${date} at ${time}`)
+    res.send(`You are connected on ${date} at ${time}. Abc!`)
 })
 
 app.get('/api/test', (req, res) => {
